@@ -1,0 +1,21 @@
+{
+  "name": "qfactory",
+  "version": "0.2.0",
+  "description": "Find a QFactory workflow for your task and run it locally with Q-Core. Self-contained skill; the read-only catalog MCP serves data only.",
+  "author": {
+    "name": "Oleg.Design",
+    "url": "https://oleg.design"
+  },
+  "license": "MIT AND CC-BY-4.0",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "QFactory",
+    "shortDescription": "Turn your task into a checked workflow result.",
+    "longDescription": "Find a relevant workflow from the current catalog. Explain the result before setup, then run the accepted plan locally through Q-Core.",
+    "developerName": "Oleg.Design",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use QFactory to find a workflow for my task."
+  },
+  "mcpServers": "./.mcp.json"
+}

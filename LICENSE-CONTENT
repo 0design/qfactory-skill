@@ -1,0 +1,18 @@
+Skill texts of the QFactory plugin
+
+Copyright (c) 2026 Oleg Kukharuk
+
+The skill texts in this plugin, skills/*/SKILL.md and skills/*/references/*,
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+You are free to share and adapt them for any purpose, including commercially,
+provided you give appropriate credit to "QFactory", provide a link to the
+license, and indicate if changes were made.
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: QFactory (https://qfactory.io)
+
+All other files in this plugin are licensed under the MIT License (see LICENSE).

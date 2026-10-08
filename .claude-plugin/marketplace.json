@@ -1,0 +1,15 @@
+{
+  "name": "qfactory",
+  "description": "QFactory plugins: find a workflow for your task and run it locally with Q-Core.",
+  "owner": {
+    "name": "Oleg.Design",
+    "url": "https://oleg.design"
+  },
+  "plugins": [
+    {
+      "name": "qfactory",
+      "source": "./",
+      "description": "Find a QFactory workflow for your task and run it locally with Q-Core. Self-contained skill; the read-only catalog MCP serves data only."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "qfactory",
+  "version": "0.2.0",
+  "description": "Find a QFactory workflow for your task and run it locally with Q-Core. Self-contained skill; the read-only catalog MCP serves data only.",
+  "author": {
+    "name": "Oleg.Design",
+    "url": "https://oleg.design"
+  },
+  "license": "MIT AND CC-BY-4.0",
+  "homepage": "https://qfactory.io",
+  "repository": "https://github.com/0design/qfactory-skill"
+}
