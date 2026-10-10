@@ -15,6 +15,9 @@
     "developerName": "Oleg.Design",
     "category": "Productivity",
     "capabilities": [],
+    "websiteURL": "https://qfactory.io",
+    "privacyPolicyURL": "https://qfactory.io/privacy",
+    "termsOfServiceURL": "https://qfactory.io/terms",
     "defaultPrompt": "Use QFactory to find a workflow for my task."
   },
   "mcpServers": "./.mcp.json"
