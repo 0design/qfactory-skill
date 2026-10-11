@@ -1,0 +1,4 @@
+interface:
+  display_name: "QFactory patterns"
+  short_description: "Make a repeated job reliable"
+  default_prompt: "Do this the same way as last time."
