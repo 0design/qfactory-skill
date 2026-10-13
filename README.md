@@ -41,17 +41,6 @@ Each prompt goes after `/qfactory:start` (Claude Code); in Codex, ask it to use 
 - Terms: https://qfactory.io/terms
 - Privacy: https://qfactory.io/privacy
 
-## Install (Claude Code)
-
-```
-/plugin marketplace add 0design/qfactory-skill
-/plugin install qfactory@qfactory
-```
-
-Then run `/qfactory:start` and describe your task. The plugin needs no account and no key.
-
-To remove it: `/plugin uninstall qfactory@qfactory`, then `/plugin marketplace remove qfactory`.
-
 ## Install (Codex CLI)
 
 ```
@@ -62,6 +51,17 @@ codex plugin add qfactory@qfactory
 `codex mcp list` then shows the `qfactory` server at `https://qfactory.io/api/mcp/plugin`. The plugin needs no account and no key.
 
 To remove it: `codex plugin remove qfactory@qfactory`, then `codex plugin marketplace remove qfactory`.
+
+## Install (Claude Code)
+
+```
+/plugin marketplace add 0design/qfactory-skill
+/plugin install qfactory@qfactory
+```
+
+Then run `/qfactory:start` and describe your task. The plugin needs no account and no key.
+
+To remove it: `/plugin uninstall qfactory@qfactory`, then `/plugin marketplace remove qfactory`.
 
 ## License
 
