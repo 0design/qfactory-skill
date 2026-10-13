@@ -31,7 +31,7 @@ The skill never sends conversation history, memory or secrets to QFactory. Of th
 
 Each prompt goes after `/qfactory:start` (Claude Code); in Codex, ask it to use QFactory for the request. The requests come from the `exampleRequests` of current catalog entries. The skill tells the agent to answer first with one workflow, the inputs it needs and one plan, and to ask for your ok; nothing is downloaded, installed or run before it.
 
-1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` Expected proposal: the `digest` workflow with its feeds, dates and local output file.
+1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` Expected proposal: the `digest` workflow with its feeds, dates, local output file and a model step through OpenRouter named as a recipient in the plan.
 2. `Copy this JSON endpoint to my webhook on demand without any AI.` Expected proposal: `webhook-relay`, with no model step and no provider key, only the source and destination URLs you name.
 3. `Weekly note on what changed in the React releases and anything breaking.` Expected proposal: `release-watch`, with a model step through OpenRouter named as a recipient in the plan.
 
