@@ -35,6 +35,12 @@ Each prompt goes after `/qfactory:start` (Claude Code); in Codex, ask it to use 
 2. `Copy this JSON endpoint to my webhook on demand without any AI.` Expected proposal: `webhook-relay`, with no model step and no provider key, only the source and destination URLs you name.
 3. `Weekly note on what changed in the React releases and anything breaking.` Expected proposal: `release-watch`, with a model step through OpenRouter named as a recipient in the plan.
 
+## Support, terms and privacy
+
+- Support: https://qfactory.io/support
+- Terms: https://qfactory.io/terms
+- Privacy: https://qfactory.io/privacy
+
 ## Install (Claude Code)
 
 ```
@@ -56,12 +62,6 @@ codex plugin add qfactory@qfactory
 `codex mcp list` then shows the `qfactory` server at `https://qfactory.io/api/mcp/plugin`. The plugin needs no account and no key.
 
 To remove it: `codex plugin remove qfactory@qfactory`, then `codex plugin marketplace remove qfactory`.
-
-## Support, terms and privacy
-
-- Support: https://qfactory.io/support
-- Terms: https://qfactory.io/terms
-- Privacy: https://qfactory.io/privacy
 
 ## License
 
