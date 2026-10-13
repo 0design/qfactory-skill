@@ -27,6 +27,14 @@ Add the server for the current project by default (the client's project or local
 
 The skill never sends conversation history, memory or secrets to QFactory. Of the project's files, it sends nothing except a workflow YAML the agent passes to `validate`; that YAML reaches the MCP but is not written to analytics. Files uploaded into the chat are not read into a workspace unless the user names them. Provider keys stay in the user's local keychain or shell.
 
+## Examples
+
+Each prompt goes after `/qfactory:start` (Claude Code) or after "Use QFactory to" in a Codex chat. The requests come from the `exampleRequests` of current catalog entries. In every case the first reply names one workflow, the inputs it needs and one plan, then asks for your ok; nothing is downloaded, installed or run before it.
+
+1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` The skill reads the catalog and proposes the `digest` workflow with its feeds, dates and local output file.
+2. `Copy this JSON endpoint to my webhook on demand without any AI.` The skill proposes `webhook-relay`: no model step and no provider key, only the source and destination URLs you name.
+3. `Weekly note on what changed in the React releases and anything breaking.` The skill proposes `release-watch`, says it uses a model step through OpenRouter and names OpenRouter as a recipient before asking for your ok.
+
 ## Install (Claude Code)
 
 ```
@@ -37,6 +45,23 @@ The skill never sends conversation history, memory or secrets to QFactory. Of th
 Then run `/qfactory:start` and describe your task. The plugin needs no account and no key.
 
 To remove it: `/plugin uninstall qfactory@qfactory`, then `/plugin marketplace remove qfactory`.
+
+## Install (Codex CLI)
+
+```
+codex plugin marketplace add 0design/qfactory-skill
+codex plugin add qfactory@qfactory
+```
+
+`codex mcp list` then shows the `qfactory` server at `https://qfactory.io/api/mcp/plugin`. The plugin needs no account and no key.
+
+To remove it: `codex plugin remove qfactory@qfactory`, then `codex plugin marketplace remove qfactory`.
+
+## Support, terms and privacy
+
+- Support: https://qfactory.io/support
+- Terms: https://qfactory.io/terms
+- Privacy: https://qfactory.io/privacy
 
 ## License
 
