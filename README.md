@@ -27,6 +27,31 @@ Add the server for the current project by default (the client's project or local
 
 The skill never sends conversation history, memory or secrets to QFactory. Of the project's files, it sends nothing except a workflow YAML the agent passes to `validate`; that YAML reaches the MCP but is not written to analytics. Files uploaded into the chat are not read into a workspace unless the user names them. Provider keys stay in the user's local keychain or shell.
 
+## Examples
+
+Each prompt goes after `/qfactory:start` (Claude Code); in Codex, ask it to use QFactory for the request. The requests come from the `exampleRequests` of current catalog entries. The skill tells the agent to answer first with one workflow, the inputs it needs and one plan, and to ask for your ok; nothing is downloaded, installed or run before it.
+
+1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` Expected proposal: the `digest` workflow with its feeds, dates, local output file and a model step through OpenRouter named as a recipient in the plan.
+2. `Copy this JSON endpoint to my webhook on demand without any AI.` Expected proposal: `webhook-relay`, with no model step and no provider key, only the source and destination URLs you name.
+3. `Weekly note on what changed in the React releases and anything breaking.` Expected proposal: `release-watch`, with a model step through OpenRouter named as a recipient in the plan.
+
+## Support, terms and privacy
+
+- Support: https://qfactory.io/support
+- Terms: https://qfactory.io/terms
+- Privacy: https://qfactory.io/privacy
+
+## Install (Codex CLI)
+
+```
+codex plugin marketplace add 0design/qfactory-skill
+codex plugin add qfactory@qfactory
+```
+
+`codex mcp list` then shows the `qfactory` server at `https://qfactory.io/api/mcp/plugin`. The plugin needs no account and no key.
+
+To remove it: `codex plugin remove qfactory@qfactory`, then `codex plugin marketplace remove qfactory`.
+
 ## Install (Claude Code)
 
 ```
