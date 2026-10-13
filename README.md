@@ -29,11 +29,11 @@ The skill never sends conversation history, memory or secrets to QFactory. Of th
 
 ## Examples
 
-Each prompt goes after `/qfactory:start` (Claude Code) or after "Use QFactory to" in a Codex chat. The requests come from the `exampleRequests` of current catalog entries. In every case the first reply names one workflow, the inputs it needs and one plan, then asks for your ok; nothing is downloaded, installed or run before it.
+Each prompt goes after `/qfactory:start` (Claude Code); in Codex, ask it to use QFactory for the request. The requests come from the `exampleRequests` of current catalog entries. The skill tells the agent to answer first with one workflow, the inputs it needs and one plan, and to ask for your ok; nothing is downloaded, installed or run before it.
 
-1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` The skill reads the catalog and proposes the `digest` workflow with its feeds, dates and local output file.
-2. `Copy this JSON endpoint to my webhook on demand without any AI.` The skill proposes `webhook-relay`: no model step and no provider key, only the source and destination URLs you name.
-3. `Weekly note on what changed in the React releases and anything breaking.` The skill proposes `release-watch`, says it uses a model step through OpenRouter and names OpenRouter as a recipient before asking for your ok.
+1. `A weekly fact-checked digest of AI news from ten feeds, delivered to a local .jsonl file.` Expected proposal: the `digest` workflow with its feeds, dates and local output file.
+2. `Copy this JSON endpoint to my webhook on demand without any AI.` Expected proposal: `webhook-relay`, with no model step and no provider key, only the source and destination URLs you name.
+3. `Weekly note on what changed in the React releases and anything breaking.` Expected proposal: `release-watch`, with a model step through OpenRouter named as a recipient in the plan.
 
 ## Install (Claude Code)
 
