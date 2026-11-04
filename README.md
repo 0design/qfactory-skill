@@ -41,3 +41,5 @@ To remove it: `/plugin uninstall qfactory@qfactory`, then `/plugin marketplace r
 ## License
 
 Code is MIT (`LICENSE`); the skill texts are CC BY 4.0, attribution "QFactory" (`LICENSE-CONTENT`).
+
+More from Oleg.Design: [UNSLOP](https://github.com/0design/unslop-skill) · [AINDF](https://github.com/0design/ai-native-design-framework) · [Q-Core](https://github.com/0design/Q-Core) · [QFactory](https://qfactory.io/?utm_source=github&utm_medium=readme&utm_campaign=qfactory-skill)
