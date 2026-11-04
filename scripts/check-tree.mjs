@@ -7,7 +7,9 @@ const ALLOWED = new Set([
   '.claude-plugin/marketplace.json', '.claude-plugin/plugin.json', '.codex-plugin/plugin.json', '.mcp.json',
   '.github/workflows/validate.yml', 'scripts/check-tree.mjs',
   'LICENSE', 'LICENSE-CONTENT', 'README.md',
-  'skills/start/SKILL.md', 'skills/start/references/create.md', 'skills/start/agents/openai.yaml',
+  'skills/start/SKILL.md', 'skills/start/references/create.md', 'skills/start/references/project-note.md', 'skills/start/agents/openai.yaml',
+  'skills/qfactory-patterns/SKILL.md', 'skills/qfactory-patterns/references/done-sheet.md',
+  'skills/qfactory-patterns/references/example-weekly-digest.md', 'skills/qfactory-patterns/agents/openai.yaml',
 ]);
 const problems = [];
 (function walk(dir) {

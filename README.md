@@ -1,14 +1,15 @@
 # QFactory plugin 0.2.0
 
-The plugin adds the skill `start` and connects the read-only QFactory catalog MCP at `https://qfactory.io/api/mcp/plugin`.
+The plugin adds two skills, `start` and `qfactory-patterns`, and connects the read-only QFactory catalog MCP at `https://qfactory.io/api/mcp/plugin`.
 
-- The skill (`skills/start/SKILL.md` with `skills/start/references/create.md`) holds every behaviour rule. It is versioned with the plugin; nothing is downloaded to change it.
+- The skill `start` (`skills/start/SKILL.md` with `skills/start/references/create.md`) holds every behaviour rule. It is versioned with the plugin; nothing is downloaded to change it. `skills/start/references/project-note.md` is the text of an optional note for `AGENTS.md` or `CLAUDE.md`, added to a project only when the accepted plan names it.
+- The skill `qfactory-patterns` (`skills/qfactory-patterns/SKILL.md` with two references) is reference knowledge, not rules: how a repeated job becomes reliable with fixed steps, a human gate and a "done" sheet. It applies when the user asks to repeat a task, do it "like last time", automate it or run it on a schedule.
 - The MCP server returns data only through five tools: `catalog`, `search`, `get`, `schema`, `validate`. It runs nothing, installs nothing and accepts no secrets.
 - Workflows run only on the user's machine with Q-Core, after the user accepts a stated plan. Human approval gates are decided by the user in their own terminal.
 
 ## Invocation
 
-Claude Code exposes the skill as `/qfactory:start`. Codex displays the plugin as QFactory; the exact mention spelling requires client verification, so do not advertise other aliases as working.
+Claude Code exposes the skills as `/qfactory:start` and `/qfactory:qfactory-patterns`; the second is also picked up from its description when a request matches. Codex displays the plugin as QFactory; the exact mention spelling requires client verification, so do not advertise other aliases as working.
 
 ## MCP connection
 
